@@ -11,7 +11,7 @@
     "prodprefix": "postcss src/_includes/css/index.css --use=autoprefixer -o src/_includes/css/index.css",
     "imgs": "node imgxfm.js",
     "start": "NODE_ENV=development npm-run-all clean imgs --parallel dev:*",
-    "build": "NODE_ENV=production npm-run-all clean prod:sass prod:prefix prod:eleventy",
+    "build": "NODE_ENV=production npm-run-all clean imgs prod:sass prod:prefix prod:eleventy",
     "testbuild": "NODE_ENV=production npm-run-all clean imgs --parallel testProd:*",
     "dev:sass": "npm run devsass -- --watch",
     "dev:prefix": "npm run devprefix --watch",
