@@ -96,6 +96,7 @@ module.exports = function (eleventyConfig) {
     files: [
       "src/**/*.js",
       "src/assets/css/*.css",
+      "src/assets/scss/*.scss",
       "src/**/*.md",
     ],
     ghostMode: false,
