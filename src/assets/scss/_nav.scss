@@ -168,7 +168,7 @@ nav {
   }
   a {
     color: #fff;
-    font-size: $stdsize + unquote("em");
+    font-size: $stdsize;
     text-decoration: none;
     border-bottom: 0;
     opacity: 0;
@@ -197,15 +197,15 @@ nav {
     color: $grey-2;
     border-bottom: 0;
   }
-  font-size: $minimalbig + unquote("rem");
+  font-size: $minimalbig;
   font-weight: 700;
-  margin-top: 0;
+  margin-top: 0.125em;
   margin-left: 5%;
 }
 
 
 // === Beginning of primary settings for larger screens ===
-@media screen and (min-width: 900px) {
+@media screen and (min-width: $navBreakpoint) {
   .nav-toggle-label {
     display: none;
   }
@@ -225,7 +225,7 @@ nav {
     grid-column: 1 / 2;
     text-align: left;
     padding-left: 10%;
-    font-size: $minimalbig + unquote("em");
+    font-size: $minimalbig;
   }
   nav {
     top: 0.8rem;
@@ -235,7 +235,7 @@ nav {
     display: table;
     // grid-column: 4 / 5;
     a {
-      font-size: $slightlybig + unquote("rem");
+      font-size: $slightlybig;
       opacity: 1;
       position: relative;
     }

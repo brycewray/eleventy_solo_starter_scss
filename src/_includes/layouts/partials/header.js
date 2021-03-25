@@ -20,12 +20,6 @@ module.exports = function(eleventyConfig) {
           <li class="nav__item">
             <a href="/posts" title="Posts">Posts</a>
           </li>
-          <li class="nav__item">
-            <a href="/privacy" title="Privacy">Privacy</a>
-          </li>
-          <li class="nav__item">
-            <a href="/contact" title="Contact">Contact</a>
-          </li>
         </ul>
       </nav>
     </header>
