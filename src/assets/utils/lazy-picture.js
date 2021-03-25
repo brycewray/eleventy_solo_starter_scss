@@ -23,19 +23,19 @@ module.exports = (url, alt, tmpl) => {
 
   switch(tmpl) {
     case 'index':
-      divClass = `h-full`
-      imgClass = `lazy object-cover object-center h-full w-full containedImage`
-      nscClass = `imgCover hero`
+      divClass = `LPindexDiv`
+      imgClass = `lazy LPindexImg containedImage`
+      nscClass = `imgCover`
       dataSzes = `100vw`
       break
     case 'posts':
-      divClass = `h-full`
-      imgClass = `imgCover hero lazy`
+      divClass = `LPpostsDiv`
+      imgClass = `imgCover lazy`
       nscClass = `imgCover`
       dataSzes = `100vw`
       break
     default:
-      divClass = `relative`
+      divClass = `LPdefaultDiv`
       imgClass = `lazy containedImage`
       nscClass = `containedImage`
       dataSzes = `(min-width: 1024px) 100vw, 50vw`
