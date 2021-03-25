@@ -15,7 +15,7 @@ exports.render = function (data) {
         <div class="post-line"></div>
         <h2 class="homePost-Latest">Latest <a href="/posts/">posts</a></h2>
         ${
-          data.collections.post.slice(0,3).map(post => /*html*/ `
+          data.collections.post.slice(-3).reverse().map(post => /*html*/ `
         <div>
           <h2 class="homePost-Title"><a href="${post.url}">${post.data.title}</a></h2>
           <p class="homePost-Subtitle">${post.data.subtitle}</p>
@@ -36,7 +36,7 @@ exports.render = function (data) {
           ` 
         ).join('')}
 
-        <p><a href="/posts/"><strong>All ${data.collections.post.length} posts</strong></a> <span class="pokey"><em>(listed five per page)</em></span></p>
+        <p style="margin-top: 2em;"><a href="/posts/"><strong>All ${data.collections.post.length} posts</strong></a> <span class="pokey"><em>(listed five per page)</em></span></p>
       </div>
     </div>
   </main>
