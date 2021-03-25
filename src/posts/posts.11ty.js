@@ -15,7 +15,7 @@ exports.data = {
 
 exports.render = function (data) {
   const pagerThing = /*html*/ `
-  <p class="text-center text-sm mt-2 mb-2">
+  <p class="posts-pagerThingP">
     ${
       data.pagination.href.previous === null 
         ? /*html*/ `${svgFirstPageIcon}${svgFirstPageIcon}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${svgFirstPageIcon}</span>`
@@ -24,7 +24,7 @@ exports.render = function (data) {
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     ${
       data.pagination.href.next === null
-        ? /*html*/ `<span class="text-gray-500">${svgLastPageIcon}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${svgLastPageIcon}${svgLastPageIcon}</span>`
+        ? /*html*/ `<span class="posts-pagerGray">${svgLastPageIcon}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${svgLastPageIcon}${svgLastPageIcon}</span>`
         : /*html*/ `<a href="${data.pagination.href.next}" class="icon" aria-label="Next page">${svgNextPageIcon}</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="${data.pagination.href.last}" class="icon" aria-label="Last page">${svgNextPageIcon}${svgNextPageIcon}</a>` 
     }
   </p>
@@ -33,7 +33,7 @@ exports.render = function (data) {
 <main>
   <div class="container ctr sansSerif">
     <h1 class="posts-Head">Posts</h1>
-    <div class="font-sans">
+    <div>
       ${pagerThing}
       <hr class="paginatorTop" />
       ${
