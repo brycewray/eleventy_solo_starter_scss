@@ -1,3 +1,4 @@
+const alpineJSVer = '2.8.2'
 const fs = require('fs')
 var internalCSS = ''
 var internalCSSPath = 'src/_includes/css/index.css'
@@ -50,7 +51,11 @@ module.exports = function(eleventyConfig) {
       ? /*html*/ `<style>${internalCSS}</style>`
       : /*html*/ `<link rel="stylesheet" href="/css/index.css" type="text/css"  />`
     }
-  </head>
+
+    <script type="module" src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v${alpineJSVer}/dist/alpine.min.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v${alpineJSVer}/dist/alpine-ie11.min.js" defer></script>
+
+    </head>
     `
   })
 }
