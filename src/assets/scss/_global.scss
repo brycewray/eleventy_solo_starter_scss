@@ -49,23 +49,23 @@ h3, .h3, h5, .h5 {
 */
 
 h1, .h1 {
-  font-size: $biggest + unquote("rem");
+  font-size: $biggest;
 }
 
 h2, .h2 {
-  font-size: $bigger + unquote("rem");
+  font-size: $bigger;
 }
 
 h3, .h3 {
-  font-size: $mightybig + unquote("rem");
+  font-size: $mightybig;
 }
 
 h4, .h4 {
-  font-size: $sortabig + unquote("rem");
+  font-size: $sortabig;
 }
 
 h5, .h5, h6, .h6 {
-  font-size: $slightlybig + unquote("rem");
+  font-size: $slightlybig;
 }
 
 a, a:focus, a:hover, a:active {
@@ -144,7 +144,7 @@ ul li li li {
 footer {
   // font-family: $sans-serif;
   text-align: center;
-  font-size: $legal + unquote("rem");
+  font-size: $legal;
   margin: 4rem auto 0 auto;
   width: 100%;
   padding-top: 0.5rem;
