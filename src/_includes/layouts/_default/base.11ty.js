@@ -1,7 +1,7 @@
 module.exports = function (data) {
   return /*html*/ `
 <!DOCTYPE html>
-<html lang="en" class="font-body dark:bg-black">
+<html lang="en">
   ${this.headTag(data)}
   <body>
     ${this.siteHeader(data)}
