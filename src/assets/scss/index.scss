@@ -1,12 +1,10 @@
-// near-future, would be better with @use
-@import 'variables';
-@import 'prismjs';
-@import 'global';
-@import 'utility';
-@import 'billboard';
-@import 'posts';
-@import 'footnotes';
-@import 'home';
-@import 'nav';
-@import 'lazyload';
-@import 'lazypic';
+@use './prismjs';
+@use './global';
+@use './utility';
+@use './billboard';
+@use './posts';
+@use './footnotes';
+@use './home';
+@use './nav';
+@use './lazyload';
+@use './lazypic';
