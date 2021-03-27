@@ -20,5 +20,6 @@ See the [online demo](https://eleventy-solo-starter-scss.vercel.app/).
 
 - Lazy-loading of some images through use of [lazyload](https://github.com/verlok/vanilla-lazyload).
 - Responsive images through my run-time `imgxfm.js` script and `lazypicture` shortcode.
-- [SCSS](https://sass-lang.com).
+- [Sass/SCSS](https://sass-lang.com).
+- [Alpine.js](https://github.com/alpinejs/alpine) for the nav menu.
 - Internal CSS in production mode, which is better for performance scores because it means one fewer [render-blocking resource](https://web.dev/render-blocking-resources/). In development mode, the CSS comes from a locally called `index.css` file.
