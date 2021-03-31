@@ -21,10 +21,10 @@
   &-Container {
     margin: 0 auto;
     width: 85%;
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: var.$bkpt_lg) {
       width: 75%;
     }
-    @media screen and (min-width: 1536px) {
+    @media screen and (min-width: var.$bkpt_2xl) {
       width: 62.5%
     }
   }
@@ -33,11 +33,11 @@
     font-size: 2.5rem;
     letter-spacing: -0.025em;
     margin-bottom: 0.25em;
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: var.$bkpt_lg) {
       padding-top: 3.25rem;
       font-size: 3.25rem;
     }
-    @media screen and (min-width: 1536px) {
+    @media screen and (min-width: var.$bkpt_2xl) {
       padding-top: 4rem;
       font-size: 4rem;
     }
@@ -47,10 +47,10 @@
     padding: 0;
     font-size: 1.5rem;
     letter-spacing: -0.025em;
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: var.$bkpt_lg) {
       font-size: 1.75rem;
     }
-    @media screen and (min-width: 1536px) {
+    @media screen and (min-width: var.$bkpt_2xl) {
       font-size: 2rem;
     }
   }
@@ -59,10 +59,10 @@
     font-size: 1rem;
     margin-top: 0;
     margin-bottom: 0;
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: var.$bkpt_lg) {
       font-size: 1.25rem;
     }
-    @media screen and (min-width: 1536px) {
+    @media screen and (min-width: var.$bkpt_2xl) {
       font-size: 1.5rem;
     }
   }
@@ -71,10 +71,10 @@
     line-height: 1.5em;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: var.$bkpt_lg) {
       font-size: 0.875rem;
     }
-    @media screen and (min-width: 1536px) {
+    @media screen and (min-width: var.$bkpt_2xl) {
       font-size: 1rem;
     }
   }
@@ -83,10 +83,10 @@
     line-height: 1.5em;
     margin-top: 0;
     margin-bottom: 1.5em;
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: var.$bkpt_lg) {
       font-size: 1.125rem;
     }
-    @media screen and (min-width: 1536px) {
+    @media screen and (min-width: var.$bkpt_2xl) {
       font-size: 1.25rem;
     }
   }
@@ -94,10 +94,10 @@
     margin-top: 0;
     margin-bottom: 3em;
     font-size: 0.625rem;
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: var.$bkpt_lg) {
       font-size: 0.75rem;
     }
-    @media screen and (min-width: 1536px) {
+    @media screen and (min-width: var.$bkpt_2xl) {
       font-size: 0.875rem;
     }
   }
@@ -147,10 +147,10 @@
 
 hr.paginatorTop, hr.paginatorBottom {
   width: 65%;
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: var.$bkpt_lg) {
     width: 50%;
   }
-  @media screen and (min-width: 1536px) {
+  @media screen and (min-width: var.$bkpt_2xl) {
     width: 40%;
   }
 }
