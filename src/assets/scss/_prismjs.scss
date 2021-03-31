@@ -75,17 +75,17 @@ pre[class*="language-"] {
 .token.attr-name,
 .token.namespace,
 .token.deleted {
-  color: #e2777a;
+  color: #ff9688; /* was e2777a */
 }
 
 .token.function-name {
-  color: #6196cc;
+  color: #92b8dd; /* was 6196cc */
 }
 
 .token.boolean,
 .token.number,
 .token.function {
-  color: #f08d49;
+  color: #f3a068; /* was f08d49 */
 }
 
 .token.property,
@@ -100,7 +100,7 @@ pre[class*="language-"] {
 .token.atrule,
 .token.keyword,
 .token.builtin {
-  color: #cc99cd;
+  color: #fa90e0; /* was cc99cd */
 }
 
 .token.string,
@@ -108,7 +108,7 @@ pre[class*="language-"] {
 .token.attr-value,
 .token.regex,
 .token.variable {
-  color: #7ec699;
+  color: #66e0aa; /* was 7ec699 */
 }
 
 .token.operator,
@@ -173,9 +173,7 @@ div.code-toolbar > .toolbar button {
   line-height: normal;
   overflow: visible;
   padding: 0;
-  -webkit-user-select: none; /* for button */
-  -moz-user-select: none;
-  -ms-user-select: none;
+  user-select: none; /* for button */
 }
 
 div.code-toolbar > .toolbar a,
