@@ -49,3 +49,10 @@ $teeny: 0.6rem;
 // alignment
 $bodyalign: left;
 $nav-height: 50px;
+
+// breakpoints (based on Tailwind CSS)
+$bkpt_sm: 640px;
+$bkpt_md: 768px;
+$bkpt_lg: 1024px;
+$bkpt_xl: 1280px;
+$bkpt_2xl: 1536px;
