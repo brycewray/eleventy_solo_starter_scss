@@ -1,4 +1,4 @@
-@use 'variables' as *;
+@use 'variables' as var;
 
 // === for home page
 .homeOpen {
@@ -10,10 +10,10 @@
   @media screen and (min-width: 1024px) {
     text-align: right;
     padding: 0 3em 0 0;
-    color: $white;
-    background-image: linear-gradient(to bottom, $darkblue, $black);
+    color: var.$white;
+    background-image: linear-gradient(to bottom, var.$darkblue, var.$black);
     @media screen and (prefers-color-scheme: dark) {
-      background-image: linear-gradient(to bottom, $black, $darkblue);
+      background-image: linear-gradient(to bottom, var.$black, var.$darkblue);
     }
     width: 45%;
     min-height: 80vh;
@@ -22,8 +22,8 @@
       font-size: 3rem;
     }
     a {
-      color: $blueLight;
-      border-bottom: 1px solid $blueLight;
+      color: var.$blueLight;
+      border-bottom: 1px solid var.$blueLight;
     }
   }
   @media screen and (min-width: 1536px) {

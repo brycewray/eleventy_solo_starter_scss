@@ -1,9 +1,9 @@
-@use 'variables' as *;
+@use 'variables' as var;
 
 // === for billboard partial
 .billboard {
   &-div {
-    font-family: $sans-serif;
+    font-family: var.$sans-serif;
     text-align: center;
     position: relative;
     height: auto;

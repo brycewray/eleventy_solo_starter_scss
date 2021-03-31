@@ -1,4 +1,4 @@
-@use 'variables' as *;
+@use 'variables' as var;
 
 /* PrismJS 1.17.1
 https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript+bash+markup-templating+git+go+graphql+php+markdown+powershell+jsx+yaml+toml&plugins=toolbar */
@@ -9,10 +9,10 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
  */
 
  code {
-  font-family: $monospaced;
-  background: $blueLightCode;
+  font-family: var.$monospaced;
+  background: var.$blueLightCode;
   @media screen and (prefers-color-scheme: dark) {
-    background: $code-bkgd-dark-mode;
+    background: var.$code-bkgd-dark-mode;
   }
 }
 
@@ -20,7 +20,7 @@ code[class*="language-"],
 pre[class*="language-"] {
   color: #ccc;
   background: none;
-  font-family: $monospaced;
+  font-family: var.$monospaced;
   font-size: 1em;
   text-align: left;
   white-space: pre;

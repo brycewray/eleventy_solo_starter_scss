@@ -1,9 +1,9 @@
-@use 'variables' as *;
+@use 'variables' as var;
 
 // == footnotes == //
 
 .footnotes, .footnote-sim, .footnote-ref {
-  font-family: $sans-serif;
+  font-family: var.$sans-serif;
 }
 
 .footnote-sim {
@@ -20,7 +20,7 @@
   }
   ol li {
     margin-bottom: 0.5rem;
-    font-size: $pokey;
+    font-size: var.$pokey;
   }
   li p {
     font-size: 100%;

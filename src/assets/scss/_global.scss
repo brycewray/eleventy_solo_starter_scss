@@ -1,16 +1,16 @@
-@use 'variables' as *;
+@use 'variables' as var;
 
 html, body {
-  font-family: $serif;
+  font-family: var.$serif;
   font-weight: 425;
-  color: $default-color;
+  color: var.$default-color;
   width: 100%;
   margin: 0 auto;
   padding: 0;
   font-feature-settings: "liga" 1; // if using any ligature-savvy fonts, ligatures won't work without this
   @media (prefers-color-scheme: dark) {
-    background: $background-dark-mode;
-    color: $default-color-dark-mode;
+    background: var.$background-dark-mode;
+    color: var.$default-color-dark-mode;
   }
 }
 
@@ -23,10 +23,10 @@ p, li {
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  font-family: $sans-serif;
+  font-family: var.$sans-serif;
   letter-spacing: -0.025rem;
   @media (prefers-color-scheme: dark) {
-    color: $default-color-dark-mode;
+    color: var.$default-color-dark-mode;
   }
 }
 
@@ -51,45 +51,45 @@ h3, .h3, h5, .h5 {
 */
 
 h1, .h1 {
-  font-size: $biggest;
+  font-size: var.$biggest;
 }
 
 h2, .h2 {
-  font-size: $bigger;
+  font-size: var.$bigger;
 }
 
 h3, .h3 {
-  font-size: $mightybig;
+  font-size: var.$mightybig;
 }
 
 h4, .h4 {
-  font-size: $sortabig;
+  font-size: var.$sortabig;
 }
 
 h5, .h5, h6, .h6 {
-  font-size: $slightlybig;
+  font-size: var.$slightlybig;
 }
 
 a, a:focus, a:hover, a:active {
   text-decoration: none;
-  border-bottom: 1px solid $blue;
+  border-bottom: 1px solid var.$blue;
   // text-decoration-skip-ink: auto;
 }
 
 a {
-  color: $blue;
-  border-bottom: 1px solid $blueFirst;
+  color: var.$blue;
+  border-bottom: 1px solid var.$blueFirst;
   @media (prefers-color-scheme: dark) {
-    color: $blueLight;
-    border-bottom: 1px solid $blueLight;
+    color: var.$blueLight;
+    border-bottom: 1px solid var.$blueLight;
   }
 }
 
 a:focus, a:hover, a:active {
-  color: $darkblue;
+  color: var.$darkblue;
   @media (prefers-color-scheme: dark) {
-    color: $grey-2;
-    border-bottom: 1px solid $blueLight;
+    color: var.$grey-2;
+    border-bottom: 1px solid var.$blueLight;
   }
 }
 
@@ -98,14 +98,14 @@ sup a, a.previous, a.next, .footnote-return, a.icon {
 }
 
 blockquote {
-	border-left: 4px solid $grey-2;
-  color: $grey-1;
+	border-left: 4px solid var.$grey-2;
+  color: var.$grey-1;
   margin-right: 0;
   margin-left: 0;
   padding-left: 1.5em;
   @media (prefers-color-scheme: dark) {
-    border-left: solid $grey-1;
-    color: $grey-2-dark-mode;
+    border-left: solid var.$grey-1;
+    color: var.$grey-2-dark-mode;
   }
   p:last-child {
     margin-bottom: 0;
@@ -144,9 +144,9 @@ ul li li li {
 }
 
 footer {
-  font-family: $sans-serif;
+  font-family: var.$sans-serif;
   text-align: center;
-  font-size: $legal;
+  font-size: var.$legal;
   margin: 4rem auto 0 auto;
   width: 100%;
   padding-top: 0.5rem;
@@ -179,7 +179,7 @@ footer {
   // width: 90%;
   margin: 0 auto;
   &-home {
-    font-family: $sans-serif;
+    font-family: var.$sans-serif;
     text-align: center;
     padding: 2rem 0;
     margin: 0 auto;
@@ -216,9 +216,9 @@ footer {
       padding: 0.25rem;
       border-radius: 12px;
       background-color: #fff;
-      border: 2px solid $grey-1;
+      border: 2px solid var.$grey-1;
       @media screen and (prefers-color-scheme: dark) {
-        border: 2px solid $grey-2;
+        border: 2px solid var.$grey-2;
       }
     }
   }
@@ -232,7 +232,7 @@ footer {
     }
   }
   &-oldComments { // old comments from Talkyard
-    // font-family: $sans-serif;
+    // font-family: var.$sans-serif;
     border-top: 1px solid #333;
     border-bottom: 1px solid #333;
     display: block;

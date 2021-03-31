@@ -1,20 +1,20 @@
-@use 'variables' as *;
+@use 'variables' as var;
 
 // === posts and post lists
 
 .posts-Container {
-  font-family: $sans-serif;
+  font-family: var.$sans-serif;
 }
 
 .posts-pagerThingP {
   text-align: center;
-  font-size: $pokey;
+  font-size: var.$pokey;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
 
 .posts-pagerGray {
-  color: $grey-2;
+  color: var.$grey-2;
 }
 
 .posts {
@@ -104,7 +104,7 @@
 }
 
 .post-line {
-  border-top: 0.2rem solid $darkblue;
+  border-top: 0.2rem solid var.$darkblue;
   @media screen and (prefers-color-scheme: dark) {
     border-color: #fff;
   }
@@ -114,9 +114,9 @@
 }
 
 .bg-dark {
-  font-family: $sans-serif;
+  font-family: var.$sans-serif;
   margin-top: 2.5rem;
-  background-color: $darkblue !important;
+  background-color: var.$darkblue !important;
   padding: 0.5rem 0 1rem 0;
   div, p {
     color: #fff;

@@ -1,15 +1,15 @@
-@use 'variables' as *;
+@use 'variables' as var;
 
 header {
-  font-family: $sans-serif;
+  font-family: var.$sans-serif;
 }
 
 nav {
   display: flex;
   align-items: center;
-  background-color: $black;
+  background-color: var.$black;
   @media (prefers-color-scheme:dark) {
-    background-color: $darkblue;
+    background-color: var.$darkblue;
   }
   justify-content: space-between;
   flex-wrap: wrap;
@@ -27,21 +27,21 @@ nav {
   display: flex;
   align-items: center;
   flex-shrink: 0;
-  color: $white;
+  color: var.$white;
   padding-left: 0.5rem;
   margin-right: 1.5rem;
 }
 
 a.nav-LogoLink { // yes, this specificity is required
-  color: $white;
-  font-size: $sortabig; // only if text instead of logo
+  color: var.$white;
+  font-size: var.$sortabig; // only if text instead of logo
   text-decoration: none;
   border: 0;
   &:hover {
-    color: $grey-2;
+    color: var.$grey-2;
   }
   @media screen and (min-width: 1024px) {
-    font-size: $stdsize; // only if text instead of logo
+    font-size: var.$stdsize; // only if text instead of logo
   }
 }
 
@@ -51,14 +51,14 @@ a.nav-LogoLink { // yes, this specificity is required
   border: 0;
   padding: 0 1.5rem;
   margin-right: 2em;
-  color: $white;
+  color: var.$white;
   &:hover {
-    color: $grey-2;
+    color: var.$grey-2;
   }
   &:focus {
     outline: 2px solid transparent;
     outline-offset: 2px;
-    color: $white;
+    color: var.$white;
   }
   @media screen and (min-width: 1024px) {
     display: none;
@@ -132,11 +132,11 @@ a.nav-LogoLink { // yes, this specificity is required
 .nav-MenuLILink {
   display: inline-block;
   padding: 0.5rem 0;
-  color: $white;
+  color: var.$white;
   border-width: 0;
   &:hover {
     border-width: 0;
-    color: $grey-2;
+    color: var.$grey-2;
     text-decoration: none;
   }
 }
