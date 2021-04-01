@@ -108,8 +108,8 @@ img.containedImage {
   margin-left: auto;
 }
 
-.imgcCaption {
-  // font-family: var.$sans-serif;
+.imgcCaption, .lazypicturecaption {
+  font-family: var.$sans-serif;
   padding: 0;
   margin-block-start: 0.5em;
   line-height: 1.375;
