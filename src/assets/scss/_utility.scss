@@ -98,6 +98,8 @@
   }
 }
 
+/*! purgecss start ignore */
+
 img.containedImage {
   display: block;
   width: 100%;
@@ -120,4 +122,7 @@ img.containedImage {
 .relative {
   position: relative;
 }
+
+/*! purgecss end ignore */
+
 // === end, utility classes
