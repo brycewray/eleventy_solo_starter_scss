@@ -21,6 +21,6 @@ See the [online demo](https://eleventy-solo-starter-scss.vercel.app/).
 - Lazy-loading of some images through use of [lazyload](https://github.com/verlok/vanilla-lazyload).
 - Responsive images through my run-time `imgxfm.js` script and `lazypicture` shortcode.
 - [Sass/SCSS](https://sass-lang.com).
-- [PostCSS](https://postcss.org) for use of [Autoprefixer](https://autoprefixer.github.io/) and, in production, [PurgeCSS](https://purgecss.com). (The SCSS files have [been edited to keep PurgeCSS from getting too aggressive](https://purgecss.com/safelisting.html).)
+- [PostCSS](https://postcss.org) for use of [Autoprefixer](https://github.com/postcss/autoprefixer) and, in production, [PurgeCSS](https://purgecss.com). (The SCSS files have [been edited to keep PurgeCSS from getting too aggressive](https://purgecss.com/safelisting.html).)
 - [Alpine.js](https://github.com/alpinejs/alpine) for the nav menu.
 - Internal CSS in production mode, which is better for performance scores because it means one fewer [render-blocking resource](https://web.dev/render-blocking-resources/). In development mode, the CSS comes from a locally called `index.css` file.
