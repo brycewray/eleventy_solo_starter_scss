@@ -37,7 +37,6 @@
     "@babel/core": "^7.13.14",
     "@babel/preset-env": "^7.13.12",
     "@babel/register": "^7.13.14",
-    "@fullhuman/postcss-purgecss": "^4.0.3",
     "autoprefixer": "^10.2.5",
     "babel-core": "^6.26.3",
     "babel-plugin-prismjs": "^2.0.1",
