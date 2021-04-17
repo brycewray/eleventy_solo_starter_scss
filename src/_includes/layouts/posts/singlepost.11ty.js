@@ -28,7 +28,7 @@ exports.render = function (data) {
         <strong>Previous</strong>: 
         <a class="next" href="${data.prevPost.url}">${data.prevPost.data.title}</a>
       </p>`
-      : /*html*/ `<p>&nbsp;</p>`
+      : ``
     }
     </div>`
     : ``
