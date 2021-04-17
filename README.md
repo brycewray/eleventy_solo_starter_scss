@@ -19,7 +19,7 @@ See the [online demo](https://eleventy-solo-starter-scss.vercel.app/).
 ## What’s under the hood
 
 - Lazy-loading of some images through use of [lazyload](https://github.com/verlok/vanilla-lazyload).
-- Responsive images through my run-time `imgxfm.js` script and `lazypicture` shortcode.
+- Responsive images through the [`eleventy-img` plugin](https://www.11ty.dev/docs/plugins/image/) and an `image` shortcode.
 - [Sass/SCSS](https://sass-lang.com).
 - [PostCSS](https://postcss.org) for use of [Autoprefixer](https://github.com/postcss/autoprefixer).
 - [Alpine.js](https://github.com/alpinejs/alpine) for the nav menu.
