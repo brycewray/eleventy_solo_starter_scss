@@ -14,18 +14,24 @@ exports.data = {
 }
 
 exports.render = function (data) {
+
+  // restructuring for easier reading/typing
+  // ... https://wesbos.com/destructuring-objects
+  const { previous, next, first, last } = data.pagination.href
+  
+
   const pagerThing = /*html*/ `
   <p class="posts-pagerThingP">
     ${
-      data.pagination.href.previous === null 
+      previous === null 
         ? /*html*/ `${svgFirstPageIcon}${svgFirstPageIcon}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${svgFirstPageIcon}</span>`
-        : /*html*/ `<a href="${data.pagination.href.first}" class="icon" aria-label="First page">${svgPrevPageIcon}${svgPrevPageIcon}</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="${data.pagination.href.previous}" class="icon" aria-label="Previous page">${svgPrevPageIcon}</a>`      
+        : /*html*/ `<a href="${first}" class="icon" aria-label="First page">${svgPrevPageIcon}${svgPrevPageIcon}</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="${previous}" class="icon" aria-label="Previous page">${svgPrevPageIcon}</a>`      
     }
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     ${
-      data.pagination.href.next === null
+      next === null
         ? /*html*/ `<span class="posts-pagerGray">${svgLastPageIcon}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${svgLastPageIcon}${svgLastPageIcon}</span>`
-        : /*html*/ `<a href="${data.pagination.href.next}" class="icon" aria-label="Next page">${svgNextPageIcon}</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="${data.pagination.href.last}" class="icon" aria-label="Last page">${svgNextPageIcon}${svgNextPageIcon}</a>` 
+        : /*html*/ `<a href="${next}" class="icon" aria-label="Next page">${svgNextPageIcon}</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="${last}" class="icon" aria-label="Last page">${svgNextPageIcon}${svgNextPageIcon}</a>` 
     }
   </p>
 `

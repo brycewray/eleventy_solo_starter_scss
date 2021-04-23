@@ -3,30 +3,35 @@ exports.data = {
 }
 
 exports.render = function (data) {
+
+  // restructuring for easier reading/typing
+  // ... https://wesbos.com/destructuring-objects
+  const { content, page, nextPost, prevPost } = data
+
   return /*html*/ `
 <main class="pt-12">
   ${this.billBoard(data)}
   <div class="post-line"></div>
   <div class="container-narrower">
     <article>
-      ${data.content}
+      ${content}
     </article>
   </div>
   
-  ${data.page.url !== "/about/"
+  ${page.url !== "/about/"
     ? /*html*/ `<div class="bg-dark">
     <h3 class="ctr wht prevnextH3"><em><a href="/posts">Other posts</a></em></h3>
-    ${data.nextPost && data.nextPost.url !== null
+    ${nextPost && data.nextPost.url !== null
       ? /*html*/ `<p class="ctr prevnextP">
         <strong>Next</strong>: 
-        <a class="next" href="${data.nextPost.url}">${data.nextPost.data.title}</a>
+        <a class="next" href="${nextPost.url}">${nextPost.data.title}</a>
       </p>`
       : ``
     }
-    ${data.prevPost && data.prevPost.url !== null
+    ${prevPost && data.prevPost.url !== null
       ? /*html*/ `<p class="ctr prevnextP">
         <strong>Previous</strong>: 
-        <a class="next" href="${data.prevPost.url}">${data.prevPost.data.title}</a>
+        <a class="next" href="${prevPost.url}">${prevPost.data.title}</a>
       </p>`
       : ``
     }
