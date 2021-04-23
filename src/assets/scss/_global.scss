@@ -2,7 +2,6 @@
 
 html, body {
   font-family: var.$serif;
-  font-weight: 425;
   color: var.$default-color;
   width: 100%;
   margin: 0 auto;
@@ -11,10 +10,6 @@ html, body {
     background: var.$background-dark-mode;
     color: var.$default-color-dark-mode;
   }
-}
-
-bold, strong {
-  font-weight: 625;
 }
 
 p, li {
@@ -33,16 +28,11 @@ h1, .h1 {
   font-weight: 825;
 }
 
-h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  font-weight: 625;
-}
-
 h1, h2, h3, h4, h5, h6 {
   display: block;
   margin-block-start: 0.25rem;
   margin-block-end: 0.25rem;
 }
-
 
 h3, .h3, h5, .h5 {
   font-style: italic;
