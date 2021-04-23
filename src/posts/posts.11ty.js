@@ -15,9 +15,12 @@ exports.data = {
 
 exports.render = function (data) {
 
-  // restructuring for easier reading/typing
-  // ... https://wesbos.com/destructuring-objects
+  // restructuring for easier reading/typing...
+  // https://wesbos.com/destructuring-objects
+  // https://stackoverflow.com/questions/65565806/destructure-object-properties-inside-array-prototype-map
+
   const { previous, next, first, last } = data.pagination.href
+  const { items } = data.pagination
   
 
   const pagerThing = /*html*/ `
@@ -43,20 +46,29 @@ exports.render = function (data) {
       ${pagerThing}
       <hr class="paginatorTop" />
       ${
-        data.pagination.items.map(post => /*html*/ `
+        items.map(
+          ({url,
+            date,
+            data: {
+              title,
+              subtitle,
+              lastmod,
+              description
+            },
+          }) => /*html*/ `
         <div>          
-          <h2 class="posts-Title"><a href="${post.url}">${post.data.title}</a></h2>
-          <p class="posts-Subtitle">${post.data.subtitle}</p>
+          <h2 class="posts-Title"><a href="${url}">${title}</a></h2>
+          <p class="posts-Subtitle">${subtitle}</p>
           <p class="posts-Dates">
-            <time datetime="${this.pub_lastmod(post.date)}}"><strong>${this.pub_lastmod(post.date)}</strong></time>
+            <time datetime="${this.pub_lastmod(date)}}"><strong>${this.pub_lastmod(date)}</strong></time>
             ${
-              post.data.lastmod
-              ? /*html*/ `<br />Last modified <time datetime="${this.pub_lastmod(post.data.lastmod)}">${this.pub_lastmod(post.data.lastmod)}`
+              lastmod
+              ? /*html*/ `<br />Last modified <time datetime="${this.pub_lastmod(lastmod)}">${this.pub_lastmod(lastmod)}`
               : ``
             }
           </p>
           <p class="posts-Description">
-            ${post.data.description}
+            ${description}
           </p>
         </div>
         `
