@@ -18,7 +18,7 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
 
 code[class*="language-"],
 pre[class*="language-"] {
-  color: hsl(0, 0%, 80%);
+  color: #a9eafa;
   background: none;
   font-family: var.$monospaced;
   font-size: 1em;
@@ -48,7 +48,7 @@ pre[class*="language-"] {
 }
 
 :not(pre) > code[class*="language-"], pre[class*="language-"] {
-  background: hsl(220, 4%, 16%);
+  background: hsl(220, 4%, 16%); /* #27282a for checking in WebAIM */
 }
 
 /* Inline code */
@@ -63,11 +63,11 @@ pre[class*="language-"] {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  color: hsl(0, 0%, 70%);
+  color: hsl(150, 50%, 70%);
 }
 
 .token.punctuation {
-  color: hsl(240, 5%, 84%);
+  color: #f7cc8d;
 }
 
 .token.tag,
@@ -84,12 +84,15 @@ pre[class*="language-"] {
 .token.boolean,
 .token.number,
 .token.function {
-  color: hsl(24, 85%, 68%); /* was f08d49 */
+  color: hsl(56, 100%, 87%); /* #fffbbd for WebAIM */
+}
+
+.token.constant {
+  color: #3DBEFF; /* #3DBEFF for WebAIM */
 }
 
 .token.property,
 .token.class-name,
-.token.constant,
 .token.symbol {
   color: hsl(41, 92%, 65%);
 }
@@ -99,7 +102,7 @@ pre[class*="language-"] {
 .token.atrule,
 .token.keyword,
 .token.builtin {
-  color: hsl(315, 91%, 77%); /* was cc99cd */
+  color: hsl(200, 87%, 64%); /* #53BEF3 for WebAIM */
 }
 
 .token.string,
@@ -107,7 +110,7 @@ pre[class*="language-"] {
 .token.attr-value,
 .token.regex,
 .token.variable {
-  color: hsl(153, 66%, 64%); /* was 7ec699 */
+  color: hsl(10, 65%, 75%); /* was 7ec699 */
 }
 
 .token.operator,
@@ -178,7 +181,7 @@ div.code-toolbar > .toolbar button {
 div.code-toolbar > .toolbar a,
 div.code-toolbar > .toolbar button,
 div.code-toolbar > .toolbar span {
-  color: hsl(0, 0%, 100%);// was #bbb
+  color: hsl(0, 0%, 100%); /* was #bbb */
   font-size: .8em;
   padding: 0 .5em;
   background: #000;
