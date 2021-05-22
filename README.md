@@ -20,5 +20,4 @@ This is a starter set for the [Eleventy](https://11ty.dev) [static site generato
 - Responsive images through the [`eleventy-img` plugin](https://www.11ty.dev/docs/plugins/image/) and an `image` shortcode.
 - [Sass/SCSS](https://sass-lang.com).
 - [PostCSS](https://postcss.org) for use of [Autoprefixer](https://github.com/postcss/autoprefixer).
-- [Alpine.js](https://github.com/alpinejs/alpine) for the nav menu.
 - Internal CSS in production mode, which is better for performance scores because it means one fewer [render-blocking resource](https://web.dev/render-blocking-resources/). In development mode, the CSS comes from a locally called `index.css` file.
