@@ -14,8 +14,6 @@ module.exports = function(eleventyConfig) {
           <li><a href="/" aria-label="Home page">Home page</li>
           <li><a href="/about/" aria-label="About me">About</a></li>
           <li><a href="/posts/" aria-label="Posts">Posts</a></li>
-          <li><a href="/privacy/" aria-label="Privacy policy">Privacy</a></li>
-          <li><a href="/contact/" aria-label="Contact me">Contact</a></li>
         </ul>
       </nav>
     </header>
