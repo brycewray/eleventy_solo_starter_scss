@@ -1,6 +1,10 @@
 module.exports = function(eleventyConfig) {
 
-  eleventyConfig.addShortcode('siteHeader', function() {
+  eleventyConfig.addShortcode('siteHeader', function(data) {
+    // https://wesbos.com/destructuring-objects
+    // https://stackoverflow.com/questions/65565806/destructure-object-properties-inside-array-prototype-map
+  
+    const { collections } = data
 
     return /*html*/ `
     <header>
@@ -13,6 +17,13 @@ module.exports = function(eleventyConfig) {
         <ul class="nav-Menu">
           <li><a href="/" aria-label="Home page">Home page</li>
           <li><a href="/about/" aria-label="About me">About</a></li>
+          <li>
+          ${
+            collections.post.slice(-1).reverse().map(
+              ({url}) => /*html*/ `
+            <a href="${url}" title="Latest post">Latest post</a>` 
+          ).join('')}
+          </li>
           <li><a href="/posts/" aria-label="Posts">Posts</a></li>
         </ul>
       </nav>
