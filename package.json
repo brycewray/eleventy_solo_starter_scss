@@ -37,17 +37,17 @@
     "glob-all": "^3.2.1",
     "html-minifier": "^4.0.0",
     "luxon": "^1.27.0",
-    "markdown-it": "^12.0.6",
+    "markdown-it": "^12.1.0",
     "markdown-it-bracketed-spans": "^1.0.1",
     "markdown-it-footnote": "^3.0.3",
     "markdown-it-link-attributes": "^3.0.0",
-    "markdown-it-prism": "^2.1.7",
+    "markdown-it-prism": "^2.1.8",
     "md5": "^2.3.0",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.3.5",
     "postcss-cli": "^8.3.1",
     "postcss-csso": "^5.0.1",
     "rimraf": "^3.0.2",
-    "sass": "^1.35.1"
+    "sass": "^1.35.2"
   }
 }
