@@ -16,7 +16,6 @@ This is a starter set for the [Eleventy](https://11ty.dev) [static site generato
 
 ## What’s under the hood
 
-- Lazy-loading of some images through use of [lazyload](https://github.com/verlok/vanilla-lazyload).
 - Responsive images through the [`eleventy-img` plugin](https://www.11ty.dev/docs/plugins/image/) and an `image` shortcode.
 - [Sass/SCSS](https://sass-lang.com).
 - [PostCSS](https://postcss.org) for use of [Autoprefixer](https://github.com/postcss/autoprefixer).
